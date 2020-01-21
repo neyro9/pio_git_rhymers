@@ -10,11 +10,11 @@ public class DefaultCountingOutRhymer {
     }
 
     public void countIn(int in) {
-        arrayStack.countIn(in);
+        arrayStack.push(in);
     }
 
     public boolean callCheck() {
-        return arrayStack.callCheck();
+        return arrayStack.isEmpty();
     }
 
     public boolean isFull() {
@@ -22,11 +22,11 @@ public class DefaultCountingOutRhymer {
     }
 
     public int checkIn() {
-        return arrayStack.checkIn();
+        return arrayStack.top();
     }
 
     public int countOut() {
-        return arrayStack.countOut();
+        return arrayStack.pop();
     }
 
     public int getTotal() {

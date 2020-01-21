@@ -1,8 +1,8 @@
 package edu.kis.vh.nursery.list;
 
-import edu.kis.vh.nursery.CountingOutRhymerInterface;
+import edu.kis.vh.nursery.IntStack;
 
-public class IntLinkedList implements CountingOutRhymerInterface {
+public class IntLinkedList implements IntStack {
 
 	private Node last;
 	private int i;

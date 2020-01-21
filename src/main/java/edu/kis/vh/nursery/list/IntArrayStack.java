@@ -1,8 +1,8 @@
 package edu.kis.vh.nursery.list;
 
-import edu.kis.vh.nursery.CountingOutRhymerInterface;
+import edu.kis.vh.nursery.IntStack;
 
-public class IntArrayStack implements CountingOutRhymerInterface {
+public class IntArrayStack implements IntStack {
     private static final int START = -1;
     private static final int ARRAY_SIZE = 12;
 
@@ -15,7 +15,7 @@ public class IntArrayStack implements CountingOutRhymerInterface {
             NUMBERS[++total] = in;
     }
     @Override
-    public boolean isEmpty() { //isEmpty
+    public boolean isEmpty() { //callCheck
         return total == START;
     }
     @Override
@@ -23,13 +23,13 @@ public class IntArrayStack implements CountingOutRhymerInterface {
         return total == 11;
     }
     @Override
-    public int top() {
+    public int top() { //checkIn
         if (isEmpty())
             return EMPTY_STACK;
         return NUMBERS[total];
     }
     @Override
-    public int pop() {
+    public int pop() { //countout
         if (isEmpty())
             return EMPTY_STACK;
         return NUMBERS[total--];
