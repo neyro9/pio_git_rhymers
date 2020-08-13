@@ -1,12 +1,23 @@
 package edu.kis.vh.nursery.list;
 
-public class Node {
+/**
+ * @author Artur
+ *  Klasa reprezentujaca wezel, jest przechowywana jako element klasy IntLinkedList
+ */
+final class Node {
+	/**
+	 * value przechowuje wartosc wezla
+	 * prev - zmienna która przechowuje referencję do poprzedniego wezla
+	 * next - zmienna która przechowuje referencję do następnego wezla
+	 */
+	int value;
+	Node prev, next;
 
-	public int value;
-	public Node prev, next;
-
-	public Node(int i) {
+	/** Konstruktor klasy Node przyjmujacy parametr typu int, inicjuje pole value
+	 * @param i zmienna, ktora jest przypisywana jako wartosc wezla
+	 */
+	Node(int i) {
 		value = i;
 	}
-	
+
 }

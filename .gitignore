@@ -1,0 +1,5 @@
+# Dont track these folders:
+.idea/
+target/
+bin/
+powp-rhymers.iml
